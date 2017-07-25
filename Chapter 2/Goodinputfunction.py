@@ -22,7 +22,7 @@ def good_input(inputoptions, inventory):
                 print()
 
             elif inventory == [True, True]: #stick, flower
-                print("You realize that the combined weight of the FLOWER and STICK you are carrying are too much to bear.")
+                print("You realize that the combined weight of the FLOWER and the STICK you are carrying are too much to bear.")
                 print("(FLOWER dropped)")
                 print()
                 newinventory = [True, False]
@@ -40,7 +40,7 @@ def good_input(inputoptions, inventory):
             goodinput = True
 
         else:
-            print("You scream '" + inputchoice + "' input the sky. Nothing happens.")
+            print("You scream '" + inputchoice + "' at the sky. Nothing happens.")
             print("Try again.")
             print()
 
@@ -49,10 +49,12 @@ def good_input(inputoptions, inventory):
 #TEST
 #(very rough test)
 stuff = [False, False]
+
 print("You come across a flower and a stick")
 print("Press 'f' to pick up flower. Press 's' to pick up stick. Press 'i' to check inventory.")
 goodinputs = ['f', 's']
 done = 'n'
+
 while done == 'n':
     whatdo, stuff = good_input(goodinputs, stuff)
     if whatdo == 's':
