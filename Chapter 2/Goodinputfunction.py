@@ -22,7 +22,7 @@ def good_input(inputoptions, inventory):
                 print()
 
             elif inventory == [True, True]: #stick, flower
-                print("You realize that the combined weight of the FLOWER and the STICK you are carrying are too much to bear.")
+                print("You realize that the combined weight of the FLOWER and the STICK you are carrying is too much to bear.")
                 print("(FLOWER dropped)")
                 print()
                 newinventory = [True, False]
