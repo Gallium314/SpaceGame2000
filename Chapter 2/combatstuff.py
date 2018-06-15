@@ -24,10 +24,10 @@ def combat_stuff(enemy, lvl):
             print("You have killed " + enemy + ". " + random.choice(deathmessage))
     return True
 
-#TEST
-namelist = ['Elephant', 'Frog', 'Tiger', 'Dragon', 'Dumbdumb', 'Cheeseface', 'Robot']
-playAgain = 'y'
-while playAgain == 'y':
-    combat_stuff(random.choice(namelist), random.randint(1,15))
-    playAgain = input('Play again? y/n')
-print("done")
+# #TEST
+# namelist = ['Elephant', 'Frog', 'Tiger', 'Dragon', 'Dumbdumb', 'Cheeseface', 'Robot']
+# playAgain = 'y'
+# while playAgain == 'y':
+#     combat_stuff(random.choice(namelist), random.randint(1,15))
+#     playAgain = input('Play again? y/n')
+# print("done")
